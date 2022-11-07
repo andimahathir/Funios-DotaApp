@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */; };
+		BD6ED9302918C01100632CFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED92F2918C01100632CFC /* ContentView.swift */; };
+		BD6ED9322918C01200632CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6ED9312918C01200632CFC /* Assets.xcassets */; };
+		BD6ED9352918C01200632CFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6ED9342918C01200632CFC /* Preview Assets.xcassets */; };
+		BD6ED93F2918C01300632CFC /* Funios_DotaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED93E2918C01300632CFC /* Funios_DotaAppTests.swift */; };
+		BD6ED9492918C01300632CFC /* Funios_DotaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED9482918C01300632CFC /* Funios_DotaAppUITests.swift */; };
+		BD6ED94B2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED94A2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD6ED93B2918C01300632CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD6ED9222918C01000632CFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD6ED9292918C01000632CFC;
+			remoteInfo = "Funios-DotaApp";
+		};
+		BD6ED9452918C01300632CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD6ED9222918C01000632CFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD6ED9292918C01000632CFC;
+			remoteInfo = "Funios-DotaApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD6ED92A2918C01000632CFC /* Funios-DotaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Funios-DotaApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppApp.swift; sourceTree = "<group>"; };
+		BD6ED92F2918C01100632CFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD6ED9312918C01200632CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD6ED9342918C01200632CFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD6ED93A2918C01300632CFC /* Funios-DotaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Funios-DotaAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD6ED93E2918C01300632CFC /* Funios_DotaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppTests.swift; sourceTree = "<group>"; };
+		BD6ED9442918C01300632CFC /* Funios-DotaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Funios-DotaAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD6ED9482918C01300632CFC /* Funios_DotaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppUITests.swift; sourceTree = "<group>"; };
+		BD6ED94A2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD6ED9272918C01000632CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6ED9372918C01300632CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6ED9412918C01300632CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD6ED9212918C01000632CFC = {
+			isa = PBXGroup;
+			children = (
+				BD6ED92C2918C01000632CFC /* Funios-DotaApp */,
+				BD6ED93D2918C01300632CFC /* Funios-DotaAppTests */,
+				BD6ED9472918C01300632CFC /* Funios-DotaAppUITests */,
+				BD6ED92B2918C01000632CFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD6ED92B2918C01000632CFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD6ED92A2918C01000632CFC /* Funios-DotaApp.app */,
+				BD6ED93A2918C01300632CFC /* Funios-DotaAppTests.xctest */,
+				BD6ED9442918C01300632CFC /* Funios-DotaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD6ED92C2918C01000632CFC /* Funios-DotaApp */ = {
+			isa = PBXGroup;
+			children = (
+				BD6ED95A2918C04200632CFC /* Resource */,
+				BD6ED9592918C03000632CFC /* InitializedApp */,
+				BD6ED9582918C02800632CFC /* Domainless */,
+				BD6ED9572918C01F00632CFC /* Presentation */,
+				BD6ED9332918C01200632CFC /* Preview Content */,
+			);
+			path = "Funios-DotaApp";
+			sourceTree = "<group>";
+		};
+		BD6ED9332918C01200632CFC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BD6ED9342918C01200632CFC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD6ED93D2918C01300632CFC /* Funios-DotaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD6ED93E2918C01300632CFC /* Funios_DotaAppTests.swift */,
+			);
+			path = "Funios-DotaAppTests";
+			sourceTree = "<group>";
+		};
+		BD6ED9472918C01300632CFC /* Funios-DotaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD6ED9482918C01300632CFC /* Funios_DotaAppUITests.swift */,
+				BD6ED94A2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift */,
+			);
+			path = "Funios-DotaAppUITests";
+			sourceTree = "<group>";
+		};
+		BD6ED9572918C01F00632CFC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BD6ED95D2918C05D00632CFC /* HomeHero */,
+				BD6ED95C2918C05800632CFC /* HeroDetail */,
+				BD6ED95B2918C04C00632CFC /* HeroList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BD6ED9582918C02800632CFC /* Domainless */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domainless;
+			sourceTree = "<group>";
+		};
+		BD6ED9592918C03000632CFC /* InitializedApp */ = {
+			isa = PBXGroup;
+			children = (
+				BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */,
+				BD6ED92F2918C01100632CFC /* ContentView.swift */,
+			);
+			path = InitializedApp;
+			sourceTree = "<group>";
+		};
+		BD6ED95A2918C04200632CFC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BD6ED9312918C01200632CFC /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BD6ED95B2918C04C00632CFC /* HeroList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HeroList;
+			sourceTree = "<group>";
+		};
+		BD6ED95C2918C05800632CFC /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HeroDetail;
+			sourceTree = "<group>";
+		};
+		BD6ED95D2918C05D00632CFC /* HomeHero */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeHero;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD6ED9292918C01000632CFC /* Funios-DotaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD6ED94E2918C01300632CFC /* Build configuration list for PBXNativeTarget "Funios-DotaApp" */;
+			buildPhases = (
+				BD6ED9262918C01000632CFC /* Sources */,
+				BD6ED9272918C01000632CFC /* Frameworks */,
+				BD6ED9282918C01000632CFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Funios-DotaApp";
+			productName = "Funios-DotaApp";
+			productReference = BD6ED92A2918C01000632CFC /* Funios-DotaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD6ED9392918C01300632CFC /* Funios-DotaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD6ED9512918C01300632CFC /* Build configuration list for PBXNativeTarget "Funios-DotaAppTests" */;
+			buildPhases = (
+				BD6ED9362918C01300632CFC /* Sources */,
+				BD6ED9372918C01300632CFC /* Frameworks */,
+				BD6ED9382918C01300632CFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD6ED93C2918C01300632CFC /* PBXTargetDependency */,
+			);
+			name = "Funios-DotaAppTests";
+			productName = "Funios-DotaAppTests";
+			productReference = BD6ED93A2918C01300632CFC /* Funios-DotaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD6ED9432918C01300632CFC /* Funios-DotaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD6ED9542918C01300632CFC /* Build configuration list for PBXNativeTarget "Funios-DotaAppUITests" */;
+			buildPhases = (
+				BD6ED9402918C01300632CFC /* Sources */,
+				BD6ED9412918C01300632CFC /* Frameworks */,
+				BD6ED9422918C01300632CFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD6ED9462918C01300632CFC /* PBXTargetDependency */,
+			);
+			name = "Funios-DotaAppUITests";
+			productName = "Funios-DotaAppUITests";
+			productReference = BD6ED9442918C01300632CFC /* Funios-DotaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD6ED9222918C01000632CFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					BD6ED9292918C01000632CFC = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					BD6ED9392918C01300632CFC = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = BD6ED9292918C01000632CFC;
+					};
+					BD6ED9432918C01300632CFC = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = BD6ED9292918C01000632CFC;
+					};
+				};
+			};
+			buildConfigurationList = BD6ED9252918C01000632CFC /* Build configuration list for PBXProject "Funios-DotaApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD6ED9212918C01000632CFC;
+			productRefGroup = BD6ED92B2918C01000632CFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD6ED9292918C01000632CFC /* Funios-DotaApp */,
+				BD6ED9392918C01300632CFC /* Funios-DotaAppTests */,
+				BD6ED9432918C01300632CFC /* Funios-DotaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD6ED9282918C01000632CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6ED9352918C01200632CFC /* Preview Assets.xcassets in Resources */,
+				BD6ED9322918C01200632CFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6ED9382918C01300632CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6ED9422918C01300632CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD6ED9262918C01000632CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6ED9302918C01100632CFC /* ContentView.swift in Sources */,
+				BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6ED9362918C01300632CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6ED93F2918C01300632CFC /* Funios_DotaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6ED9402918C01300632CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6ED94B2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift in Sources */,
+				BD6ED9492918C01300632CFC /* Funios_DotaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD6ED93C2918C01300632CFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD6ED9292918C01000632CFC /* Funios-DotaApp */;
+			targetProxy = BD6ED93B2918C01300632CFC /* PBXContainerItemProxy */;
+		};
+		BD6ED9462918C01300632CFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD6ED9292918C01000632CFC /* Funios-DotaApp */;
+			targetProxy = BD6ED9452918C01300632CFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BD6ED94C2918C01300632CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD6ED94D2918C01300632CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD6ED94F2918C01300632CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Funios-DotaApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Funios-DotaApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD6ED9502918C01300632CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Funios-DotaApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Funios-DotaApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD6ED9522918C01300632CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Funios-DotaAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Funios-DotaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Funios-DotaApp";
+			};
+			name = Debug;
+		};
+		BD6ED9532918C01300632CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Funios-DotaAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Funios-DotaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Funios-DotaApp";
+			};
+			name = Release;
+		};
+		BD6ED9552918C01300632CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Funios-DotaAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Funios-DotaApp";
+			};
+			name = Debug;
+		};
+		BD6ED9562918C01300632CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Funios-DotaAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Funios-DotaApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD6ED9252918C01000632CFC /* Build configuration list for PBXProject "Funios-DotaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD6ED94C2918C01300632CFC /* Debug */,
+				BD6ED94D2918C01300632CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD6ED94E2918C01300632CFC /* Build configuration list for PBXNativeTarget "Funios-DotaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD6ED94F2918C01300632CFC /* Debug */,
+				BD6ED9502918C01300632CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD6ED9512918C01300632CFC /* Build configuration list for PBXNativeTarget "Funios-DotaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD6ED9522918C01300632CFC /* Debug */,
+				BD6ED9532918C01300632CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD6ED9542918C01300632CFC /* Build configuration list for PBXNativeTarget "Funios-DotaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD6ED9552918C01300632CFC /* Debug */,
+				BD6ED9562918C01300632CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD6ED9222918C01000632CFC /* Project object */;
+}
