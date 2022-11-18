@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		BD6ED93F2918C01300632CFC /* Funios_DotaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED93E2918C01300632CFC /* Funios_DotaAppTests.swift */; };
 		BD6ED9492918C01300632CFC /* Funios_DotaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED9482918C01300632CFC /* Funios_DotaAppUITests.swift */; };
 		BD6ED94B2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED94A2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift */; };
+		D801ECE929211BB200506054 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECE829211BB100506054 /* Networker.swift */; };
+		D801ECEB29211C0900506054 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECEA29211C0900506054 /* NetworkError.swift */; };
+		D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECEC29211C5200506054 /* NetworkFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		BD6ED9442918C01300632CFC /* Funios-DotaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Funios-DotaAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6ED9482918C01300632CFC /* Funios_DotaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppUITests.swift; sourceTree = "<group>"; };
 		BD6ED94A2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D801ECE829211BB100506054 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		D801ECEA29211C0900506054 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D801ECEC29211C5200506054 /* NetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 		BD6ED9582918C02800632CFC /* Domainless */ = {
 			isa = PBXGroup;
 			children = (
+				D801ECE729211A9C00506054 /* Networking */,
 			);
 			path = Domainless;
 			sourceTree = "<group>";
@@ -181,6 +188,16 @@
 			children = (
 			);
 			path = HomeHero;
+			sourceTree = "<group>";
+		};
+		D801ECE729211A9C00506054 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D801ECE829211BB100506054 /* Networker.swift */,
+				D801ECEA29211C0900506054 /* NetworkError.swift */,
+				D801ECEC29211C5200506054 /* NetworkFactory.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +262,6 @@
 		BD6ED9222918C01000632CFC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
@@ -263,7 +279,7 @@
 				};
 			};
 			buildConfigurationList = BD6ED9252918C01000632CFC /* Build configuration list for PBXProject "Funios-DotaApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -314,7 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6ED9302918C01100632CFC /* ContentView.swift in Sources */,
+				D801ECEB29211C0900506054 /* NetworkError.swift in Sources */,
 				BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */,
+				D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */,
+				D801ECE929211BB200506054 /* Networker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +499,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,7 +509,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -508,6 +528,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,7 +538,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
