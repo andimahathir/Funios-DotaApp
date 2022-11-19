@@ -172,8 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				BD6ED95D2918C05D00632CFC /* HomeHero */,
-				BD6ED95C2918C05800632CFC /* HeroDetail */,
-				BD6ED95B2918C04C00632CFC /* HeroList */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -203,25 +201,12 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		BD6ED95B2918C04C00632CFC /* HeroList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HeroList;
-			sourceTree = "<group>";
-		};
-		BD6ED95C2918C05800632CFC /* HeroDetail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HeroDetail;
-			sourceTree = "<group>";
-		};
 		BD6ED95D2918C05D00632CFC /* HomeHero */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = HomeHero;
+			name = HomeHero;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		D801ECE729211A9C00506054 /* Networking */ = {
