@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01FA29DB2928A38700F7F3CE /* Proxima Nova Alt Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95929289C90000CE4E9 /* Proxima Nova Alt Bold.otf */; };
+		01FA29DC2928A38A00F7F3CE /* Proxima Nova Alt Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95429289C90000CE4E9 /* Proxima Nova Alt Light.otf */; };
+		01FA29DD2928A38C00F7F3CE /* Proxima Nova Alt Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95529289C90000CE4E9 /* Proxima Nova Alt Thin.otf */; };
+		01FA29DE2928A38E00F7F3CE /* Proxima Nova Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95629289C90000CE4E9 /* Proxima Nova Black.otf */; };
+		01FA29DF2928A39000F7F3CE /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95729289C90000CE4E9 /* Proxima Nova Bold.otf */; };
+		01FA29E02928A39200F7F3CE /* Proxima Nova Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95329289C90000CE4E9 /* Proxima Nova Extrabold.otf */; };
+		01FA29E12928A39300F7F3CE /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95229289C90000CE4E9 /* Proxima Nova Thin.otf */; };
+		01FA29E22928A39600F7F3CE /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */; };
 		BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */; };
 		BD6ED9302918C01100632CFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED92F2918C01100632CFC /* ContentView.swift */; };
 		BD6ED9322918C01200632CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6ED9312918C01200632CFC /* Assets.xcassets */; };
@@ -14,6 +22,9 @@
 		BD6ED93F2918C01300632CFC /* Funios_DotaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED93E2918C01300632CFC /* Funios_DotaAppTests.swift */; };
 		BD6ED9492918C01300632CFC /* Funios_DotaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED9482918C01300632CFC /* Funios_DotaAppUITests.swift */; };
 		BD6ED94B2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED94A2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift */; };
+		D801ECE929211BB200506054 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECE829211BB100506054 /* Networker.swift */; };
+		D801ECEB29211C0900506054 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECEA29211C0900506054 /* NetworkError.swift */; };
+		D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECEC29211C5200506054 /* NetworkFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01DEB95229289C90000CE4E9 /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
+		01DEB95329289C90000CE4E9 /* Proxima Nova Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Extrabold.otf"; sourceTree = "<group>"; };
+		01DEB95429289C90000CE4E9 /* Proxima Nova Alt Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Light.otf"; sourceTree = "<group>"; };
+		01DEB95529289C90000CE4E9 /* Proxima Nova Alt Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Thin.otf"; sourceTree = "<group>"; };
+		01DEB95629289C90000CE4E9 /* Proxima Nova Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Black.otf"; sourceTree = "<group>"; };
+		01DEB95729289C90000CE4E9 /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		01DEB95929289C90000CE4E9 /* Proxima Nova Alt Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Bold.otf"; sourceTree = "<group>"; };
+		01FA29DA2928A30200F7F3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD6ED92A2918C01000632CFC /* Funios-DotaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Funios-DotaApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppApp.swift; sourceTree = "<group>"; };
 		BD6ED92F2918C01100632CFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +64,9 @@
 		BD6ED9442918C01300632CFC /* Funios-DotaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Funios-DotaAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6ED9482918C01300632CFC /* Funios_DotaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppUITests.swift; sourceTree = "<group>"; };
 		BD6ED94A2918C01300632CFC /* Funios_DotaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D801ECE829211BB100506054 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		D801ECEA29211C0900506054 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D801ECEC29211C5200506054 /* NetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +94,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01DEB95129289C82000CE4E9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				01DEB95929289C90000CE4E9 /* Proxima Nova Alt Bold.otf */,
+				01DEB95429289C90000CE4E9 /* Proxima Nova Alt Light.otf */,
+				01DEB95529289C90000CE4E9 /* Proxima Nova Alt Thin.otf */,
+				01DEB95629289C90000CE4E9 /* Proxima Nova Black.otf */,
+				01DEB95729289C90000CE4E9 /* Proxima Nova Bold.otf */,
+				01DEB95329289C90000CE4E9 /* Proxima Nova Extrabold.otf */,
+				01DEB95229289C90000CE4E9 /* Proxima Nova Thin.otf */,
+				01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		BD6ED9212918C01000632CFC = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +132,8 @@
 		BD6ED92C2918C01000632CFC /* Funios-DotaApp */ = {
 			isa = PBXGroup;
 			children = (
+				01FA29DA2928A30200F7F3CE /* Info.plist */,
+				01DEB95129289C82000CE4E9 /* Fonts */,
 				BD6ED95A2918C04200632CFC /* Resource */,
 				BD6ED9592918C03000632CFC /* InitializedApp */,
 				BD6ED9582918C02800632CFC /* Domainless */,
@@ -132,8 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				BD6ED95D2918C05D00632CFC /* HomeHero */,
-				BD6ED95C2918C05800632CFC /* HeroDetail */,
-				BD6ED95B2918C04C00632CFC /* HeroList */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -141,6 +179,7 @@
 		BD6ED9582918C02800632CFC /* Domainless */ = {
 			isa = PBXGroup;
 			children = (
+				D801ECE729211A9C00506054 /* Networking */,
 			);
 			path = Domainless;
 			sourceTree = "<group>";
@@ -162,25 +201,22 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		BD6ED95B2918C04C00632CFC /* HeroList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HeroList;
-			sourceTree = "<group>";
-		};
-		BD6ED95C2918C05800632CFC /* HeroDetail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HeroDetail;
-			sourceTree = "<group>";
-		};
 		BD6ED95D2918C05D00632CFC /* HomeHero */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = HomeHero;
+			name = HomeHero;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D801ECE729211A9C00506054 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D801ECE829211BB100506054 /* Networker.swift */,
+				D801ECEA29211C0900506054 /* NetworkError.swift */,
+				D801ECEC29211C5200506054 /* NetworkFactory.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +281,6 @@
 		BD6ED9222918C01000632CFC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
@@ -263,7 +298,7 @@
 				};
 			};
 			buildConfigurationList = BD6ED9252918C01000632CFC /* Build configuration list for PBXProject "Funios-DotaApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -288,7 +323,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6ED9352918C01200632CFC /* Preview Assets.xcassets in Resources */,
+				01FA29E22928A39600F7F3CE /* ProximaNova-Regular.otf in Resources */,
 				BD6ED9322918C01200632CFC /* Assets.xcassets in Resources */,
+				01FA29E02928A39200F7F3CE /* Proxima Nova Extrabold.otf in Resources */,
+				01FA29DE2928A38E00F7F3CE /* Proxima Nova Black.otf in Resources */,
+				01FA29E12928A39300F7F3CE /* Proxima Nova Thin.otf in Resources */,
+				01FA29DF2928A39000F7F3CE /* Proxima Nova Bold.otf in Resources */,
+				01FA29DC2928A38A00F7F3CE /* Proxima Nova Alt Light.otf in Resources */,
+				01FA29DB2928A38700F7F3CE /* Proxima Nova Alt Bold.otf in Resources */,
+				01FA29DD2928A38C00F7F3CE /* Proxima Nova Alt Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +357,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6ED9302918C01100632CFC /* ContentView.swift in Sources */,
+				D801ECEB29211C0900506054 /* NetworkError.swift in Sources */,
 				BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */,
+				D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */,
+				D801ECE929211BB200506054 /* Networker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,11 +521,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Funios-DotaApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Funios-DotaApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,7 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -503,11 +551,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Funios-DotaApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Funios-DotaApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,7 +567,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
