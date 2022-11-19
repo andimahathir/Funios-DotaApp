@@ -37,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01DEB95229289C90000CE4E9 /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
+		01DEB95329289C90000CE4E9 /* Proxima Nova Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Extrabold.otf"; sourceTree = "<group>"; };
+		01DEB95429289C90000CE4E9 /* Proxima Nova Alt Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Light.otf"; sourceTree = "<group>"; };
+		01DEB95529289C90000CE4E9 /* Proxima Nova Alt Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Thin.otf"; sourceTree = "<group>"; };
+		01DEB95629289C90000CE4E9 /* Proxima Nova Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Black.otf"; sourceTree = "<group>"; };
+		01DEB95729289C90000CE4E9 /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		01DEB95929289C90000CE4E9 /* Proxima Nova Alt Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Bold.otf"; sourceTree = "<group>"; };
 		BD6ED92A2918C01000632CFC /* Funios-DotaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Funios-DotaApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppApp.swift; sourceTree = "<group>"; };
 		BD6ED92F2918C01100632CFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +85,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01DEB95129289C82000CE4E9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				01DEB95929289C90000CE4E9 /* Proxima Nova Alt Bold.otf */,
+				01DEB95429289C90000CE4E9 /* Proxima Nova Alt Light.otf */,
+				01DEB95529289C90000CE4E9 /* Proxima Nova Alt Thin.otf */,
+				01DEB95629289C90000CE4E9 /* Proxima Nova Black.otf */,
+				01DEB95729289C90000CE4E9 /* Proxima Nova Bold.otf */,
+				01DEB95329289C90000CE4E9 /* Proxima Nova Extrabold.otf */,
+				01DEB95229289C90000CE4E9 /* Proxima Nova Thin.otf */,
+				01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		BD6ED9212918C01000632CFC = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +123,7 @@
 		BD6ED92C2918C01000632CFC /* Funios-DotaApp */ = {
 			isa = PBXGroup;
 			children = (
+				01DEB95129289C82000CE4E9 /* Fonts */,
 				BD6ED95A2918C04200632CFC /* Resource */,
 				BD6ED9592918C03000632CFC /* InitializedApp */,
 				BD6ED9582918C02800632CFC /* Domainless */,
