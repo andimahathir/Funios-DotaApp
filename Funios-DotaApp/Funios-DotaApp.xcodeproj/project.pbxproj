@@ -26,6 +26,7 @@
 		D801ECEB29211C0900506054 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECEA29211C0900506054 /* NetworkError.swift */; };
 		D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECEC29211C5200506054 /* NetworkFactory.swift */; };
 		E6C5FB04292919150095CDB2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB03292919150095CDB2 /* HomeView.swift */; };
+		E6C5FB07292922E10095CDB2 /* GuideOfHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB06292922E10095CDB2 /* GuideOfHeroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D801ECEA29211C0900506054 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D801ECEC29211C5200506054 /* NetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFactory.swift; sourceTree = "<group>"; };
 		E6C5FB03292919150095CDB2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E6C5FB06292922E10095CDB2 /* GuideOfHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideOfHeroView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				BD6ED95A2918C04200632CFC /* Resource */,
 				BD6ED9592918C03000632CFC /* InitializedApp */,
 				BD6ED9582918C02800632CFC /* Domainless */,
+				E6C5FB05292922C30095CDB2 /* Component */,
 				BD6ED9572918C01F00632CFC /* Presentation */,
 				BD6ED9332918C01200632CFC /* Preview Content */,
 			);
@@ -219,6 +222,14 @@
 				D801ECEC29211C5200506054 /* NetworkFactory.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		E6C5FB05292922C30095CDB2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5FB06292922E10095CDB2 /* GuideOfHeroView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +375,7 @@
 				E6C5FB04292919150095CDB2 /* HomeView.swift in Sources */,
 				D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */,
 				D801ECE929211BB200506054 /* Networker.swift in Sources */,
+				E6C5FB07292922E10095CDB2 /* GuideOfHeroView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
