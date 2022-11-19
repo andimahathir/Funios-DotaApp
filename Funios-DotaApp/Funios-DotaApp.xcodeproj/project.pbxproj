@@ -25,6 +25,7 @@
 		D801ECE929211BB200506054 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECE829211BB100506054 /* Networker.swift */; };
 		D801ECEB29211C0900506054 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECEA29211C0900506054 /* NetworkError.swift */; };
 		D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECEC29211C5200506054 /* NetworkFactory.swift */; };
+		E6C5FB04292919150095CDB2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB03292919150095CDB2 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D801ECE829211BB100506054 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		D801ECEA29211C0900506054 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D801ECEC29211C5200506054 /* NetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFactory.swift; sourceTree = "<group>"; };
+		E6C5FB03292919150095CDB2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,9 +206,9 @@
 		BD6ED95D2918C05D00632CFC /* HomeHero */ = {
 			isa = PBXGroup;
 			children = (
+				E6C5FB03292919150095CDB2 /* HomeView.swift */,
 			);
-			name = HomeHero;
-			path = Home;
+			path = HomeHero;
 			sourceTree = "<group>";
 		};
 		D801ECE729211A9C00506054 /* Networking */ = {
@@ -359,6 +361,7 @@
 				BD6ED9302918C01100632CFC /* ContentView.swift in Sources */,
 				D801ECEB29211C0900506054 /* NetworkError.swift in Sources */,
 				BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */,
+				E6C5FB04292919150095CDB2 /* HomeView.swift in Sources */,
 				D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */,
 				D801ECE929211BB200506054 /* Networker.swift in Sources */,
 			);
