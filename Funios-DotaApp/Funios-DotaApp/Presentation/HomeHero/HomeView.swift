@@ -10,11 +10,15 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(alignment: .leading) {
                 GuideOfHeroView()
+                
+                Text("Guide Hero")
+                    .font(.headline)
                 
                 Spacer()
             }
+            .padding()
             .navigationTitle("Dota Hero")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

@@ -27,6 +27,7 @@
 		D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D801ECEC29211C5200506054 /* NetworkFactory.swift */; };
 		E6C5FB04292919150095CDB2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB03292919150095CDB2 /* HomeView.swift */; };
 		E6C5FB07292922E10095CDB2 /* GuideOfHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB06292922E10095CDB2 /* GuideOfHeroView.swift */; };
+		E6C5FB09292926C10095CDB2 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB08292926C10095CDB2 /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		D801ECEC29211C5200506054 /* NetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFactory.swift; sourceTree = "<group>"; };
 		E6C5FB03292919150095CDB2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E6C5FB06292922E10095CDB2 /* GuideOfHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideOfHeroView.swift; sourceTree = "<group>"; };
+		E6C5FB08292926C10095CDB2 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E6C5FB06292922E10095CDB2 /* GuideOfHeroView.swift */,
+				E6C5FB08292926C10095CDB2 /* SectionView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				D801ECEB29211C0900506054 /* NetworkError.swift in Sources */,
 				BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */,
 				E6C5FB04292919150095CDB2 /* HomeView.swift in Sources */,
+				E6C5FB09292926C10095CDB2 /* SectionView.swift in Sources */,
 				D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */,
 				D801ECE929211BB200506054 /* Networker.swift in Sources */,
 				E6C5FB07292922E10095CDB2 /* GuideOfHeroView.swift in Sources */,
