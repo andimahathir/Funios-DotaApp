@@ -10,7 +10,30 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            
+            VStack {
+                
+            }
+            .navigationTitle("Dota Hero")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading){
+                    Button() {
+                        print("sidebar")
+                    } label: {
+                        Image(systemName: "list.bullet")
+                            .foregroundColor(.black)
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Button() {
+                        print("search")
+                    } label: {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.black)
+                    }
+                }
+            }
         }
     }
 }
