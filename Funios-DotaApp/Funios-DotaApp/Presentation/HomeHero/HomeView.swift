@@ -10,13 +10,19 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                GuideOfHeroView()
-                
-                Text("Guide Hero")
-                    .font(.headline)
-                
-                Spacer()
+            ScrollView {
+                VStack(alignment: .leading) {
+                    GuideOfHeroView()
+                    
+                    Text("Guide Hero")
+                        .font(.headline)
+                    
+                    SectionView(heroType: "Strength", description: "Strength heroes has advantages in many HP")
+                    
+                    SectionView(heroType: "Agility", description: "Agility heroes has advantages in speed")
+                    
+                    SectionView(heroType: "Intelligence", description: "Intelligence heroes are smart")
+                }
             }
             .padding()
             .navigationTitle("Dota Hero")
