@@ -10,6 +10,8 @@ import SwiftUI
 struct SectionView: View {
     let heroType: String
     let description: String
+    let heroes: DotaHeroModel
+    
     var body: some View {
         VStack {
             HStack {
@@ -35,10 +37,10 @@ struct SectionView: View {
             
             ScrollView(.horizontal) {
                 HStack(spacing: 15) {
-                    ForEach(0..<10) {
-                        Text("Hero \($0)")
+                    ForEach(heroes) { hero in
+                        Text("\(hero.localizedName)")
                             .foregroundColor(.white)
-                            .font(.title)
+                            .font(.title2)
                             .frame(width: 150, height: 172)
                             .background(.gray)
                             .cornerRadius(10)
@@ -51,7 +53,13 @@ struct SectionView: View {
 
 struct SectionView_Previews: PreviewProvider {
     static var previews: some View {
-        SectionView(heroType: "Strength", description: "Strength hero has advantages in many HP")
+        SectionView(heroType: "Strength", description: "Strength hero has advantages in many HP", heroes: [
+            DotaHeroElement(id: 1, name: "npc_dota_hero_antimage", localizedName: "Anti-Mage", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
+            DotaHeroElement(id: 2, name: "npc_dota_hero_antimage", localizedName: "Bloodseeker", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
+            DotaHeroElement(id: 3, name: "npc_dota_hero_antimage", localizedName: "Drow Ranger", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
+            DotaHeroElement(id: 4, name: "npc_dota_hero_antimage", localizedName: "Naruto", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
+            DotaHeroElement(id: 5, name: "npc_dota_hero_antimage", localizedName: "Sasuke", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2)
+        ])
             .padding()
     }
 }

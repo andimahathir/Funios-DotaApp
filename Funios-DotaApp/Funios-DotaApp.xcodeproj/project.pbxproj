@@ -30,6 +30,7 @@
 		E6C5FB09292926C10095CDB2 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB08292926C10095CDB2 /* SectionView.swift */; };
 		E6C5FB0C292A09160095CDB2 /* DotaHeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB0B292A09160095CDB2 /* DotaHeroModel.swift */; };
 		E6C5FB0F292A0A1D0095CDB2 /* DotaHomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB0E292A0A1D0095CDB2 /* DotaHomeServices.swift */; };
+		E6C5FB11292A287F0095CDB2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5FB10292A287F0095CDB2 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		E6C5FB08292926C10095CDB2 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		E6C5FB0B292A09160095CDB2 /* DotaHeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroModel.swift; sourceTree = "<group>"; };
 		E6C5FB0E292A0A1D0095CDB2 /* DotaHomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHomeServices.swift; sourceTree = "<group>"; };
+		E6C5FB10292A287F0095CDB2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				E6C5FB0D292A09440095CDB2 /* Services */,
 				E6C5FB0A292A08DC0095CDB2 /* Model */,
 				E6C5FB03292919150095CDB2 /* HomeView.swift */,
+				E6C5FB10292A287F0095CDB2 /* HomeViewModel.swift */,
 			);
 			path = HomeHero;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C5FB0F292A0A1D0095CDB2 /* DotaHomeServices.swift in Sources */,
+				E6C5FB11292A287F0095CDB2 /* HomeViewModel.swift in Sources */,
 				BD6ED9302918C01100632CFC /* ContentView.swift in Sources */,
 				D801ECEB29211C0900506054 /* NetworkError.swift in Sources */,
 				BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */,

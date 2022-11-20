@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - DotaModelElement
-struct DotaHeroElement: Codable {
+struct DotaHeroElement: Codable, Identifiable {
     let id: Int
     let name, localizedName: String
     let primaryAttr: String

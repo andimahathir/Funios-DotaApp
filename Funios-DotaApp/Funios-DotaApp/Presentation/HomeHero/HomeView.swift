@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var homeViewModel: HomeViewModel = HomeViewModel()
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -17,12 +19,15 @@ struct HomeView: View {
                     Text("Guide Hero")
                         .font(.headline)
                     
-                    SectionView(heroType: "Strength", description: "Strength heroes has advantages in many HP")
+                    SectionView(heroType: "Strength", description: "Strength heroes has advantages in many HP", heroes: homeViewModel.strHero)
                     
-                    SectionView(heroType: "Agility", description: "Agility heroes has advantages in speed")
+                    SectionView(heroType: "Agility", description: "Agility heroes has advantages in speed", heroes: homeViewModel.agiHero)
                     
-                    SectionView(heroType: "Intelligence", description: "Intelligence heroes are smart")
+                    SectionView(heroType: "Intelligence", description: "Intelligence heroes are smart", heroes: homeViewModel.intHero)
                 }
+            }
+            .task {
+                await homeViewModel.getHeroes()
             }
             .padding()
             .navigationTitle("Dota Hero")
