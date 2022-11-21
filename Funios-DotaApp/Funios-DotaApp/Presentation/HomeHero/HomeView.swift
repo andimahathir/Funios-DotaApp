@@ -28,7 +28,7 @@ struct HomeView: View {
         .task {
             await homeViewModel.getHeroes()
         }
-        .padding()
+        .padding([.horizontal, .top])
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading){
                 Button() {
