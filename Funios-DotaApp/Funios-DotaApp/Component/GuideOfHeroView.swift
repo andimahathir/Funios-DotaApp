@@ -10,14 +10,18 @@ import SwiftUI
 struct GuideOfHeroView: View {
     var body: some View {
         ZStack(alignment: .leading) {
+            Color.gray
+                .frame(width: 360, height: 185)
+                .cornerRadius(10)
+            
             AsyncImage(url: URL(string: "https://images2.alphacoders.com/505/505544.jpg")) { image in
                 image
                     .resizable()
-                    .scaledToFit()
+                    .scaledToFill()
             } placeholder: {
                 Color.gray
             }
-            .frame(width: .infinity, height: 185)
+            .frame(width: 360, height: 185)
             .cornerRadius(10)
             
             VStack {

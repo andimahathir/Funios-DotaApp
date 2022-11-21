@@ -38,12 +38,15 @@ struct SectionView: View {
             ScrollView(.horizontal) {
                 HStack(spacing: 15) {
                     ForEach(heroes.prefix(3)) { hero in
-                        Text("\(hero.localizedName)")
-                            .foregroundColor(.white)
-                            .font(.title2)
-                            .frame(width: 150, height: 172)
-                            .background(.gray)
-                            .cornerRadius(10)
+                        ZStack {
+                            Color.gray
+                            
+                            Text("\(hero.localizedName)")
+                                .foregroundColor(.white)
+                                .font(.title2)
+                        }
+                        .frame(width: 150, height: 172)
+                        .cornerRadius(10)
                     }
                 }
             }
