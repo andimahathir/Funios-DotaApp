@@ -44,7 +44,7 @@ struct SectionView: View {
                             AsyncImage(url: URL(string: hero.image)) { image in
                                 image
                                     .resizable()
-                                    .scaledToFill()
+                                    .scaledToFit()
                             } placeholder: {
                                 Color.gray
                             }
@@ -53,11 +53,11 @@ struct SectionView: View {
                                 Spacer()
                                 Text("\(hero.localizedName)")
                                     .foregroundColor(.white)
-                                    .font(.title3.weight(.medium))
+                                    .font(.title3.weight(.bold))
                                     .padding(.bottom)
                             }
                         }
-                        .frame(width: 150, height: 172)
+                        .frame(width: 258, height: 144)
                         .cornerRadius(10)
                     }
                 }
