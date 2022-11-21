@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class HomeViewModel: ObservableObject {
     @Published var dotaHero: DotaHeroModel = DotaHeroModel()
     @Published var strHero: DotaHeroModel = []
@@ -35,9 +36,5 @@ class HomeViewModel: ObservableObject {
                 continue
             }
         }
-        
-        print(agiHero)
-        print(strHero)
-        print(intHero)
     }
 }
