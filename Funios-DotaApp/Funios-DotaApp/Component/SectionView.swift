@@ -41,9 +41,21 @@ struct SectionView: View {
                         ZStack {
                             Color.gray
                             
-                            Text("\(hero.localizedName)")
-                                .foregroundColor(.white)
-                                .font(.title2)
+                            AsyncImage(url: URL(string: hero.image)) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                            } placeholder: {
+                                Color.gray
+                            }
+                            
+                            VStack {
+                                Spacer()
+                                Text("\(hero.localizedName)")
+                                    .foregroundColor(.white)
+                                    .font(.title3.weight(.medium))
+                                    .padding(.bottom)
+                            }
                         }
                         .frame(width: 150, height: 172)
                         .cornerRadius(10)
@@ -58,10 +70,10 @@ struct SectionView_Previews: PreviewProvider {
     static var previews: some View {
         SectionView(heroType: "Strength", description: "Strength hero has advantages in many HP", heroes: [
             DotaHeroElement(id: 1, name: "npc_dota_hero_antimage", localizedName: "Anti-Mage", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
-            DotaHeroElement(id: 2, name: "npc_dota_hero_antimage", localizedName: "Bloodseeker", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
-            DotaHeroElement(id: 3, name: "npc_dota_hero_antimage", localizedName: "Drow Ranger", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
-            DotaHeroElement(id: 4, name: "npc_dota_hero_antimage", localizedName: "Naruto", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
-            DotaHeroElement(id: 5, name: "npc_dota_hero_antimage", localizedName: "Sasuke", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2)
+            DotaHeroElement(id: 2, name: "npc_dota_hero_bloodseeker", localizedName: "Bloodseeker", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
+            DotaHeroElement(id: 3, name: "npc_dota_hero_drow_ranger", localizedName: "Drow Ranger", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
+            DotaHeroElement(id: 4, name: "npc_dota_hero_antimage", localizedName: "Anti-Mage", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2),
+            DotaHeroElement(id: 5, name: "npc_dota_hero_antimage", localizedName: "Anti-Mage", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], legs: 2)
         ])
             .padding()
     }
