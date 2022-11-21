@@ -14,9 +14,9 @@ class HomeViewModel: ObservableObject {
     @Published var agiHero: DotaHeroModel = []
     @Published var intHero: DotaHeroModel = []
     
-    private var dotaServices: DotaHomeServices
+    private var dotaServices: DotaHomeServicesProtocol
     
-    init(dotaServices: DotaHomeServices = DotaHomeServices()) {
+    init(dotaServices: DotaHomeServicesProtocol = DotaHomeServices()) {
         self.dotaServices = dotaServices
     }
     
