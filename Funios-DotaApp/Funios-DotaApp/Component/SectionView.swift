@@ -37,7 +37,7 @@ struct SectionView: View {
             
             ScrollView(.horizontal) {
                 HStack(spacing: 15) {
-                    ForEach(heroes) { hero in
+                    ForEach(heroes.prefix(3)) { hero in
                         Text("\(hero.localizedName)")
                             .foregroundColor(.white)
                             .font(.title2)
