@@ -12,10 +12,11 @@ struct AllHeroView: View {
     
     var heroType:String
     var heroes:DotaHeroModel
+    let columns = [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)]
     
     var body: some View {
         ScrollView {
-            LazyVStack {
+            LazyVGrid (columns: columns) {
                 ForEach(heroes) { hero in
                     ZStack {
                         Color.gray
@@ -23,7 +24,7 @@ struct AllHeroView: View {
                         AsyncImage(url: URL(string: hero.image)) { image in
                             image
                                 .resizable()
-                                .scaledToFit()
+                                .scaledToFill()
                         } placeholder: {
                             Color.gray
                         }
@@ -36,12 +37,14 @@ struct AllHeroView: View {
                                 .padding(.bottom)
                         }
                     }
-                    .frame(width: 258, height: 144)
                     .cornerRadius(10)
-
+                    .padding([.top, .bottom], 5)
                 }
             }
+            .padding([.leading, .trailing], 10)
+            .padding(.top, 10)
         }
+        .navigationTitle(Text("\(heroType) Hero"))
     }
 }
 
