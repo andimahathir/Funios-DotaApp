@@ -24,6 +24,10 @@ class HomeViewModel: ObservableObject {
     func getHeroes() async {
         guard let data = try? await dotaServices.getHeroes(endPoint: .getHeroes) else { return }
         
+        strHero = []
+        agiHero = []
+        intHero = []
+        
         for item in data {
             switch item.primaryAttr {
             case "str":
