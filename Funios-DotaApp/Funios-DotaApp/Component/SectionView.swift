@@ -27,9 +27,7 @@ struct SectionView: View {
                 
                 Spacer()
                 
-                Button() {
-                    print("see all")
-                } label: {
+                NavigationLink(destination: AllHeroView(heroType: heroType, heroes: heroes)) {
                     Text("See all")
                         .font(.footnote.weight(.bold))
                 }
