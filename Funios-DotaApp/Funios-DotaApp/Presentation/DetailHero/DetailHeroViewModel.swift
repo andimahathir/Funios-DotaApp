@@ -54,15 +54,34 @@ class DetailHeroViewModel: ObservableObject {
     }
     
     func getHeroStrength() -> String {
-        return "\(dotaHero[0].baseStr) + \(dotaHero[0].strGain) per level"
+        return "\(dotaHero[0].baseStr) + \(dotaHero[0].strGain)"
     }
     
     func getHeroAgility() -> String {
-        return "\(dotaHero[0].baseAgi) + \(dotaHero[0].agiGain) per level"
+        return "\(dotaHero[0].baseAgi) + \(dotaHero[0].agiGain)"
     }
     
     func getHeroIntelligence() -> String {
-        return "\(dotaHero[0].baseInt) + \(dotaHero[0].intGain) per level"
+        return "\(dotaHero[0].baseInt) + \(dotaHero[0].intGain)"
     }
     
+    func getHeroBaseAttack() ->  String {
+        return "\(dotaHero[0].baseAttackMin) - \(dotaHero[0].baseAttackMax)"
+    }
+    
+    func getHeroBaseArmor() ->  String {
+        return "\(dotaHero[0].baseArmor)"
+    }
+    
+    func getHeroMovingSpeed() ->  String {
+        return "\(dotaHero[0].baseArmor)"
+    }
+    
+    func getHeroHealth() -> String {
+        return "\(dotaHero[0].baseHealth)+\(dotaHero[0].baseHealthRegen)"
+    }
+    
+    func getHeroMana() -> String {
+        return "\(dotaHero[0].baseMana)+\(dotaHero[0].baseManaRegen)"
+    }
 }
