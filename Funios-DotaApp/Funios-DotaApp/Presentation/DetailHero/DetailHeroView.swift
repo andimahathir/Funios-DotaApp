@@ -16,11 +16,18 @@ struct DetailHeroView: View {
                 AsyncImage(url: URL(string: "https://api.opendota.com\(dota.img)")) { image in
                     image
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                 } placeholder: {
                     Color.gray
-                }.frame(height: 220)
+                }.frame(width: 385 ,height: 300)
                 .mask(LinearGradient(gradient: Gradient(colors: [.black, .black, .clear]), startPoint: .top, endPoint: .bottom))
+                HStack(spacing: 10) {
+                    Text(dota.localizedName)
+                        .font(Font.custom("Proxima Nova Bold", size: 40))
+                        .foregroundColor(.white)
+                    Image(dota.primaryAttr == "agi" ? "Agility" : "")
+                    Spacer()
+                }
             }
             
         }.ignoresSafeArea()
