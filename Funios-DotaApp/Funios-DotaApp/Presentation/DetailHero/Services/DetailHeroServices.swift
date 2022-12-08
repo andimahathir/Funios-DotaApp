@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DotaHeroStatsServices: AnyObject {
+protocol DotaHeroStatsServicesProtocol: AnyObject {
     var networker: NetworkerProtocol {get}
     func getHeroStats(endPoint: NetworkFactory) async throws -> DotaHeroesStatsModel
 }
