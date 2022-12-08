@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DotaHerosStat: Codable {
+struct DotaHeroStats: Codable {
     let id: Int
     let name, localizedName: String
     let primaryAttr: String
@@ -88,4 +88,4 @@ struct DotaHerosStat: Codable {
     }
 }
 
-typealias DotaHerosStats = [DotaHerosStat]
+typealias DotaHeroesStats = [DotaHeroStats]
