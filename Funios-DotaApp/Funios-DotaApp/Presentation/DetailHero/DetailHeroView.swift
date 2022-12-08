@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct DetailHeroView: View {
-    var dota: DotaHeroStats
+    var dotaName: String
+    @StateObject var detailHeroViewModel: DetailHeroViewModel = DetailHeroViewModel()
+    
     var body: some View {
         ZStack(alignment: .top) {
             Color("BackgroundColor")
+            
             VStack(spacing: 5) {
-                AsyncImage(url: URL(string: "https://api.opendota.com\(dota.img)")) { image in
+                AsyncImage(url: URL(string: "https://api.opendota.com\(detailHeroViewModel.dotaHero[0].img)")) { image in
                     image
                         .resizable()
                         .scaledToFill()
@@ -22,15 +25,15 @@ struct DetailHeroView: View {
                 }.frame(width: 385 ,height: 300)
                 .mask(LinearGradient(gradient: Gradient(colors: [.black, .black, .clear]), startPoint: .top, endPoint: .bottom))
                 HStack(spacing: 10) {
-                    Text(dota.localizedName)
+                    Text(detailHeroViewModel.dotaHero[0].localizedName)
                         .font(Font.custom("Proxima Nova Bold", size: 40))
                         .foregroundColor(.white)
-                    Image(dota.primaryAttr == "agi" ? "Agility" : "")
+                    Image(detailHeroViewModel.dotaHero[0].primaryAttr == "agi" ? "Agility" : "")
                     Spacer()
                 }
                 
                 HStack {
-                    ForEach(dota.roles, id: \.self) { role in
+                    ForEach(detailHeroViewModel.dotaHero[0].roles, id: \.self) { role in
                         Text(role)
                             .font(Font.custom("ProximaNova-Regular", size: 18))
                             .foregroundColor(.white)
@@ -40,12 +43,16 @@ struct DetailHeroView: View {
                 
             }
             
-        }.ignoresSafeArea()
+        }.task {
+            await detailHeroViewModel.getHeroStats(heroName: dotaName)
+        }
+        .ignoresSafeArea()
+            
     }
 }
 
 struct DetailHeroView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailHeroView(dota: DotaHeroStatsDummy)
+        DetailHeroView(dotaName: "Axe")
     }
 }
