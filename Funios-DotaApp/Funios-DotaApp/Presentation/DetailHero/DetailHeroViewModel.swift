@@ -8,5 +8,23 @@
 import Foundation
 
 class DetailHeroViewModel: ObservableObject {
+    @Published var dotaHero: DotaHeroesStatsModel = DotaHeroesStatsModel()
     
+    private var detailHeroStatsServices: DetailHeroStatsServicesProtocol
+    
+    init(detailHeroStatsServices: DetailHeroStatsServicesProtocol = DetailHeroStatsServices()) {
+        self.detailHeroStatsServices = detailHeroStatsServices
+        dotaHero.append(DotaHeroStatsDummy)
+    }
+    
+    func getHeroStats(heroName: String) async {
+        guard let data = try? await detailHeroStatsServices.getHeroStats(endPoint: .getHeroStats) else { return }
+        
+        for hero in data {
+            if hero.localizedName == heroName {
+                self.dotaHero.removeAll()
+                self.dotaHero.append(hero)
+            }
+        }
+    }
 }
