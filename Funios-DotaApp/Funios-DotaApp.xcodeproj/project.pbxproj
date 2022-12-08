@@ -10,6 +10,7 @@
 		01E2A63329418A920061DEAD /* DetailHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2A63229418A920061DEAD /* DetailHeroView.swift */; };
 		01E2A636294190330061DEAD /* DotaHeroStatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2A635294190330061DEAD /* DotaHeroStatsModel.swift */; };
 		01E2A6382941B00D0061DEAD /* DetailHeroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2A6372941B00D0061DEAD /* DetailHeroViewModel.swift */; };
+		01E2A63B294207670061DEAD /* DetailHeroServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2A63A294207670061DEAD /* DetailHeroServices.swift */; };
 		01FA29DB2928A38700F7F3CE /* Proxima Nova Alt Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95929289C90000CE4E9 /* Proxima Nova Alt Bold.otf */; };
 		01FA29DC2928A38A00F7F3CE /* Proxima Nova Alt Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95429289C90000CE4E9 /* Proxima Nova Alt Light.otf */; };
 		01FA29DD2928A38C00F7F3CE /* Proxima Nova Alt Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95529289C90000CE4E9 /* Proxima Nova Alt Thin.otf */; };
@@ -65,6 +66,7 @@
 		01E2A63229418A920061DEAD /* DetailHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroView.swift; sourceTree = "<group>"; };
 		01E2A635294190330061DEAD /* DotaHeroStatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroStatsModel.swift; sourceTree = "<group>"; };
 		01E2A6372941B00D0061DEAD /* DetailHeroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroViewModel.swift; sourceTree = "<group>"; };
+		01E2A63A294207670061DEAD /* DetailHeroServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroServices.swift; sourceTree = "<group>"; };
 		01FA29DA2928A30200F7F3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD6ED92A2918C01000632CFC /* Funios-DotaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Funios-DotaApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppApp.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		01E2A62F29418A200061DEAD /* DetailHero */ = {
 			isa = PBXGroup;
 			children = (
+				01E2A639294207430061DEAD /* Services */,
 				01E2A63429418F610061DEAD /* Model */,
 				01E2A63229418A920061DEAD /* DetailHeroView.swift */,
 				01E2A6372941B00D0061DEAD /* DetailHeroViewModel.swift */,
@@ -143,6 +146,14 @@
 				01E2A635294190330061DEAD /* DotaHeroStatsModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		01E2A639294207430061DEAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01E2A63A294207670061DEAD /* DetailHeroServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		BD6ED9212918C01000632CFC = {
@@ -431,6 +442,7 @@
 				01E2A636294190330061DEAD /* DotaHeroStatsModel.swift in Sources */,
 				E6C5FB0C292A09160095CDB2 /* DotaHeroModel.swift in Sources */,
 				E6C5FB04292919150095CDB2 /* HomeView.swift in Sources */,
+				01E2A63B294207670061DEAD /* DetailHeroServices.swift in Sources */,
 				E6C5FB09292926C10095CDB2 /* SectionView.swift in Sources */,
 				D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */,
 				D801ECE929211BB200506054 /* Networker.swift in Sources */,
