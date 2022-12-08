@@ -14,13 +14,7 @@ struct DotaHeroStats: Codable, Identifiable {
     let attackType: String
     let roles: [String]
     let img: String
-    var image: String {
-        return "https://api.opendota.com/+\(img)"
-    }
     let icon: String
-    var heroIcon: String {
-        return "https://api.opendota.com/+\(icon)"
-    }
     let baseHealth: Int
     let baseHealthRegen: Double
     let baseMana: Int
