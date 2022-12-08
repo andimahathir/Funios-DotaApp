@@ -16,14 +16,8 @@ struct DetailHeroView: View {
             Color("BackgroundColor")
             
             VStack(spacing: 5) {
-                AsyncImage(url: URL(string: detailHeroViewModel.getHeroImage())) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } placeholder: {
-                    Color.gray
-                }.frame(width: 385 ,height: 300)
-                .mask(LinearGradient(gradient: Gradient(colors: [.black, .black, .clear]), startPoint: .top, endPoint: .bottom))
+                HeroBanner()
+                    .environmentObject(detailHeroViewModel)
                 
                 HStack(spacing: 10) {
                     Text(detailHeroViewModel.getHeroName())
@@ -158,5 +152,19 @@ struct HeroStatsView: View {
         .padding(5)
         .padding(.bottom, 15)
         .foregroundColor(.white)
+    }
+}
+
+struct HeroBanner: View {
+    @EnvironmentObject var detailHeroViewModel: DetailHeroViewModel
+    var body: some View {
+        AsyncImage(url: URL(string: detailHeroViewModel.getHeroImage())) { image in
+            image
+                .resizable()
+                .scaledToFill()
+        } placeholder: {
+            Color.gray
+        }.frame(width: 385 ,height: 300)
+            .mask(LinearGradient(gradient: Gradient(colors: [.black, .black, .clear]), startPoint: .top, endPoint: .bottom))
     }
 }
