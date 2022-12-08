@@ -12,7 +12,7 @@ struct DetailHeroView: View {
     var body: some View {
         ZStack(alignment: .top) {
             Color("BackgroundColor")
-            VStack {
+            VStack(spacing: 5) {
                 AsyncImage(url: URL(string: "https://api.opendota.com\(dota.img)")) { image in
                     image
                         .resizable()
@@ -28,6 +28,16 @@ struct DetailHeroView: View {
                     Image(dota.primaryAttr == "agi" ? "Agility" : "")
                     Spacer()
                 }
+                
+                HStack {
+                    ForEach(dota.roles, id: \.self) { role in
+                        Text(role)
+                            .font(Font.custom("ProximaNova-Regular", size: 18))
+                            .foregroundColor(.white)
+                    }
+                    Spacer()
+                }
+                
             }
             
         }.ignoresSafeArea()
