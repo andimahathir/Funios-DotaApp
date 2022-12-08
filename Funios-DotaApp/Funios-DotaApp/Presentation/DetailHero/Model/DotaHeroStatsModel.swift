@@ -64,7 +64,7 @@ struct DotaHeroStats: Codable, Identifiable {
     }
 }
 
-typealias DotaHeroesStats = [DotaHeroStats]
+typealias DotaHeroesStatsModel = [DotaHeroStats]
 
 
 let DotaHeroStatsDummy: DotaHeroStats = DotaHeroStats(id: 1, name: "npc_dota_hero_antimage", localizedName: "Anti-Mage", primaryAttr: "agi", attackType: "Melee", roles: ["Carry", "Escape", "Nuker"], img: "/apps/dota2/images/dota_react/heroes/antimage.png?", icon: "/apps/dota2/images/dota_react/heroes/icons/antimage.png?", baseHealth: 200, baseHealthRegen: 0.25, baseMana: 75, baseManaRegen: 0, baseArmor: 0, baseMr: 25, baseAttackMin: 29, baseAttackMax: 33, baseStr: 21, baseAgi: 24, baseInt: 12, strGain: 1.6, agiGain: 2.8, intGain: 1.8, attackRange: 150, projectileSpeed: 0, attackRate: 1.4, moveSpeed: 310, cmEnabled: true, legs: 2, heroID: 1, turboPicks: 201912, turboWINS: 105754, proBan: 131, proWin: 20, proPick: 57)
