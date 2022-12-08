@@ -47,8 +47,10 @@ struct DetailHeroView: View {
                         .cornerRadius(20)
                     
                     HeroStatsView()
+                        
                         .environmentObject(detailHeroViewModel)
                 }
+                .padding(.top, 20)
                 .frame(width: 380, height: 220)
             }
             
@@ -71,9 +73,13 @@ struct HeroStatsView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Stats")
-            HStack(spacing: 20) {
+                .font(Font.custom("Proxima Nova Extrabold", size: 20))
+                .padding(.top, 10)
+            
+            HStack(alignment: .top, spacing: 20) {
                 VStack(alignment: .leading) {
                     Text("Attributes")
+                        .font(Font.custom("Proxima Nova Bold", size: 16))
                     HStack {
                         Image("Strength")
                         Text(detailHeroViewModel.getHeroStrength())
@@ -90,10 +96,11 @@ struct HeroStatsView: View {
                     }
                 }
                 Color(.gray)
-                    .frame(width: 1, height: 150)
+                    .frame(width: 1, height: 140)
                 
                 VStack(alignment: .leading) {
                     Text("Ability")
+                        .font(Font.custom("Proxima Nova Bold", size: 16))
                     HStack {
                         Image("AttackSymbol")
                             .resizable()
@@ -117,6 +124,7 @@ struct HeroStatsView: View {
                 }
                 
                 VStack {
+                    Spacer()
                     HStack {
                         Image(systemName: "heart.fill")
                             .resizable()
@@ -140,10 +148,15 @@ struct HeroStatsView: View {
                                 Color("BlueColaColor")
                             }
                     }
+                    Spacer()
+                    Spacer()
+                    
                 }
             }
         }
+        .font(Font.custom("ProximaNova-Regular", size: 16))
         .padding(5)
+        .padding(.bottom, 15)
         .foregroundColor(.white)
     }
 }
