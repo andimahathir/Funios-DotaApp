@@ -27,13 +27,15 @@ struct DetailHeroView: View {
                     Spacer()
                 }
                 
-                HStack {
-                    ForEach(detailHeroViewModel.getHeroRoles(), id: \.self) { role in
-                        Text(role)
-                            .font(Font.custom("ProximaNova-Regular", size: 18))
-                            .foregroundColor(.white)
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(detailHeroViewModel.getHeroRoles(), id: \.self) { role in
+                            Text(role)
+                                .font(Font.custom("ProximaNova-Regular", size: 18))
+                                .foregroundColor(.white)
+                        }
+                        Spacer()
                     }
-                    Spacer()
                 }
                 
                 ZStack {
