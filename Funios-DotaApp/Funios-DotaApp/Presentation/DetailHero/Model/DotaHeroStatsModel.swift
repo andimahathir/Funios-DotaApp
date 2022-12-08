@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct DotaHeroStats: Codable {
+struct DotaHeroStats: Codable, Identifiable {
     let id: Int
     let name, localizedName: String
     let primaryAttr: String
     let attackType: String
     let roles: [String]
-    private let img: String
+    let img: String
     var image: String {
         return "https://api.opendota.com/+\(img)"
     }
-    private let icon: String
+    let icon: String
     var heroIcon: String {
         return "https://api.opendota.com/+\(icon)"
     }
@@ -31,15 +31,9 @@ struct DotaHeroStats: Codable {
     let attackRange, projectileSpeed: Int
     let attackRate: Double
     let moveSpeed: Int
-    let turnRate: Double?
     let cmEnabled: Bool
     let legs, heroID, turboPicks, turboWINS: Int
-    let proBan, proWin, proPick, the1_Pick: Int
-    let the1_Win, the2_Pick, the2_Win, the3_Pick: Int
-    let the3_Win, the4_Pick, the4_Win, the5_Pick: Int
-    let the5_Win, the6_Pick, the6_Win, the7_Pick: Int
-    let the7_Win, the8_Pick, the8_Win, nullPick: Int
-    let nullWin: Int
+    let proBan, proWin, proPick: Int
 
     enum CodingKeys: String, CodingKey {
         case id, name
@@ -65,7 +59,6 @@ struct DotaHeroStats: Codable {
         case projectileSpeed = "projectile_speed"
         case attackRate = "attack_rate"
         case moveSpeed = "move_speed"
-        case turnRate = "turn_rate"
         case cmEnabled = "cm_enabled"
         case legs
         case heroID = "hero_id"
@@ -74,25 +67,10 @@ struct DotaHeroStats: Codable {
         case proBan = "pro_ban"
         case proWin = "pro_win"
         case proPick = "pro_pick"
-        case the1_Pick = "1_pick"
-        case the1_Win = "1_win"
-        case the2_Pick = "2_pick"
-        case the2_Win = "2_win"
-        case the3_Pick = "3_pick"
-        case the3_Win = "3_win"
-        case the4_Pick = "4_pick"
-        case the4_Win = "4_win"
-        case the5_Pick = "5_pick"
-        case the5_Win = "5_win"
-        case the6_Pick = "6_pick"
-        case the6_Win = "6_win"
-        case the7_Pick = "7_pick"
-        case the7_Win = "7_win"
-        case the8_Pick = "8_pick"
-        case the8_Win = "8_win"
-        case nullPick = "null_pick"
-        case nullWin = "null_win"
     }
 }
 
 typealias DotaHeroesStats = [DotaHeroStats]
+
+
+
