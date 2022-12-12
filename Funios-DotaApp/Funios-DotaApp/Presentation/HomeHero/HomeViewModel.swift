@@ -18,15 +18,14 @@ class HomeViewModel: ObservableObject {
     
     init(dotaServices: DotaHomeServicesProtocol = DotaHomeServices()) {
         self.dotaServices = dotaServices
+        Task {
+            await self.getHeroes()
+        }
     }
     
     //MARK: Function to get hero data from api and doing the classification
     func getHeroes() async {
         guard let data = try? await dotaServices.getHeroes(endPoint: .getHeroes) else { return }
-        
-        strHero = []
-        agiHero = []
-        intHero = []
         
         for item in data {
             switch item.primaryAttr {
