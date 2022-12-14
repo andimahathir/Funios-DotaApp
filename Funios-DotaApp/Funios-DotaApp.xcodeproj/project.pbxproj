@@ -15,6 +15,7 @@
 		01FA29E02928A39200F7F3CE /* Proxima Nova Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95329289C90000CE4E9 /* Proxima Nova Extrabold.otf */; };
 		01FA29E12928A39300F7F3CE /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95229289C90000CE4E9 /* Proxima Nova Thin.otf */; };
 		01FA29E22928A39600F7F3CE /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */; };
+		8460B49B293DA313007E8E00 /* AllHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460B49A293DA313007E8E00 /* AllHeroView.swift */; };
 		BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */; };
 		BD6ED9302918C01100632CFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED92F2918C01100632CFC /* ContentView.swift */; };
 		BD6ED9322918C01200632CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6ED9312918C01200632CFC /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		01DEB95929289C90000CE4E9 /* Proxima Nova Alt Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Bold.otf"; sourceTree = "<group>"; };
 		01FA29DA2928A30200F7F3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8460B49A293DA313007E8E00 /* AllHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllHeroView.swift; sourceTree = "<group>"; };
 		BD6ED92A2918C01000632CFC /* Funios-DotaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Funios-DotaApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppApp.swift; sourceTree = "<group>"; };
 		BD6ED92F2918C01100632CFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 				01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8460B499293CEC40007E8E00 /* AllHero */ = {
+			isa = PBXGroup;
+			children = (
+				8460B49A293DA313007E8E00 /* AllHeroView.swift */,
+			);
+			path = AllHero;
 			sourceTree = "<group>";
 		};
 		BD6ED9212918C01000632CFC = {
@@ -184,6 +194,7 @@
 		BD6ED9572918C01F00632CFC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8460B499293CEC40007E8E00 /* AllHero */,
 				BD6ED95D2918C05D00632CFC /* HomeHero */,
 			);
 			path = Presentation;
@@ -399,6 +410,7 @@
 			files = (
 				E6C5FB0F292A0A1D0095CDB2 /* DotaHomeServices.swift in Sources */,
 				E6C5FB11292A287F0095CDB2 /* HomeViewModel.swift in Sources */,
+				8460B49B293DA313007E8E00 /* AllHeroView.swift in Sources */,
 				BD6ED9302918C01100632CFC /* ContentView.swift in Sources */,
 				D801ECEB29211C0900506054 /* NetworkError.swift in Sources */,
 				BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */,
