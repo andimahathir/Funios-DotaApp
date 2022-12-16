@@ -37,31 +37,34 @@ struct SectionView: View {
                 HStack(spacing: 15) {
                     
                     ForEach(heroes.prefix(3)) { hero in
-                        NavigationLink(destination: DetailHeroView(dotaName: hero.localizedName), isActive: $heroSelected, label: {EmptyView()})
+                        
                         Button {
                             heroSelected.toggle()
                         } label: {
-                            ZStack {
-                                Color.gray
-                                
-                                AsyncImage(url: URL(string: hero.image)) { image in
-                                    image
-                                        .resizable()
-                                        .scaledToFit()
-                                } placeholder: {
+                            NavigationLink(destination: DetailHeroView(dotaName: hero.localizedName), label: {
+                                ZStack {
                                     Color.gray
+                                    
+                                    AsyncImage(url: URL(string: hero.image)) { image in
+                                        image
+                                            .resizable()
+                                            .scaledToFit()
+                                    } placeholder: {
+                                        Color.gray
+                                    }
+                                    
+                                    VStack {
+                                        Spacer()
+                                        Text("\(hero.localizedName)")
+                                            .foregroundColor(.white)
+                                            .font(.title3.weight(.bold))
+                                            .padding(.bottom)
+                                    }
                                 }
-                                
-                                VStack {
-                                    Spacer()
-                                    Text("\(hero.localizedName)")
-                                        .foregroundColor(.white)
-                                        .font(.title3.weight(.bold))
-                                        .padding(.bottom)
-                                }
-                            }
-                            .frame(width: 258, height: 144)
-                            .cornerRadius(10)
+                                .frame(width: 258, height: 144)
+                                .cornerRadius(10)
+                            })
+                            
                         }
                     }
                 }
