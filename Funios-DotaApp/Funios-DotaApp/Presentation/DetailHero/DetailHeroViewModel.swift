@@ -8,7 +8,7 @@
 import Foundation
 
 class DetailHeroViewModel: ObservableObject {
-    @Published var dotaHero: DotaHeroesStatsModel = DotaHeroesStatsModel()
+    @Published var dotaHero: DotaHeroesStatsModel = []
     
     private var detailHeroStatsServices: DetailHeroStatsServicesProtocol
     
@@ -18,13 +18,12 @@ class DetailHeroViewModel: ObservableObject {
     }
     
     func getHeroStats(heroName: String) async {
-        guard let data = try? await detailHeroStatsServices.getHeroStats(endPoint: .getHeroStats) else { return }
-        
-        for hero in data {
-            if hero.localizedName == heroName {
-                self.dotaHero.removeAll()
-                self.dotaHero.append(hero)
-            }
+        do {
+            let data = try await detailHeroStatsServices.getHeroStats(endPoint: .getHeroStats)
+            
+            self.dotaHero = data.filter {$0.localizedName == heroName}
+        } catch {
+            print("err while getHeroStats")
         }
     }
     
