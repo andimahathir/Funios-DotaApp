@@ -18,40 +18,44 @@ struct DetailHeroView: View {
             VStack(spacing: 5) {
                 HeroBanner()
                     .environmentObject(detailHeroViewModel)
-                
-                HStack(spacing: 10) {
-                    Text(detailHeroViewModel.getHeroName())
-                        .font(Font.custom("Proxima Nova Bold", size: 40))
-                        .foregroundColor(.white)
-                    Image(detailHeroViewModel.getHeroPrimaryAttribute())
-                    Spacer()
-                }
-                
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(detailHeroViewModel.getHeroRoles(), id: \.self) { role in
-                            Text(role)
-                                .font(Font.custom("ProximaNova-Regular", size: 18))
-                                .foregroundColor(.white)
-                        }
+                Group {
+                    HStack(spacing: 10) {
+                        Text(detailHeroViewModel.getHeroName())
+                            .font(Font.custom("Proxima Nova Bold", size: 40))
+                            .foregroundColor(.white)
+                        Image(detailHeroViewModel.getHeroPrimaryAttribute())
                         Spacer()
                     }
-                }
-                
-                ZStack {
-                    Color("BaseColor")
-                        .cornerRadius(20)
                     
-                    HeroStatsView()
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(detailHeroViewModel.getHeroRoles(), id: \.self) { role in
+                                Text(role)
+                                    .font(Font.custom("ProximaNova-Regular", size: 18))
+                                    .foregroundColor(.white)
+                            }
+                            Spacer()
+                        }
+                    }
+                    
+                    ZStack {
+                        Color("BaseColor")
+                            .cornerRadius(20)
                         
-                        .environmentObject(detailHeroViewModel)
+                        HeroStatsView()
+                            
+                            .environmentObject(detailHeroViewModel)
+                    }
+                    .padding(.top, 20)
+                    .frame(width: 380, height: 220)
                 }
-                .padding(.top, 20)
-                .frame(width: 380, height: 220)
+                .padding(.horizontal, 20)
             }
             
-        }.task {
-            await detailHeroViewModel.getHeroStats(heroName: dotaName)
+        }.onAppear {
+            Task {
+                await detailHeroViewModel.getHeroStats(heroName: dotaName)
+            }
         }
         .ignoresSafeArea()
             
@@ -60,7 +64,7 @@ struct DetailHeroView: View {
 
 struct DetailHeroView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailHeroView(dotaName: "Axe")
+        DetailHeroView(dotaName: "Alchemist")
     }
 }
 
@@ -166,7 +170,7 @@ struct HeroBanner: View {
                 .scaledToFill()
         } placeholder: {
             Color.gray
-        }.frame(width: 385 ,height: 300)
+        }.frame(width: 390 ,height: 300)
             .mask(LinearGradient(gradient: Gradient(colors: [.black, .black, .clear]), startPoint: .top, endPoint: .bottom))
     }
 }
