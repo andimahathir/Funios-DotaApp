@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01115980294CDB5200C7B0F8 /* HeroBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111597F294CDB5200C7B0F8 /* HeroBannerView.swift */; };
+		01115982294CDB7600C7B0F8 /* HeroStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01115981294CDB7600C7B0F8 /* HeroStatsView.swift */; };
+		01E2A63329418A920061DEAD /* DetailHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2A63229418A920061DEAD /* DetailHeroView.swift */; };
+		01E2A636294190330061DEAD /* DotaHeroStatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2A635294190330061DEAD /* DotaHeroStatsModel.swift */; };
+		01E2A6382941B00D0061DEAD /* DetailHeroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2A6372941B00D0061DEAD /* DetailHeroViewModel.swift */; };
+		01E2A63B294207670061DEAD /* DetailHeroServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2A63A294207670061DEAD /* DetailHeroServices.swift */; };
 		01FA29DB2928A38700F7F3CE /* Proxima Nova Alt Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95929289C90000CE4E9 /* Proxima Nova Alt Bold.otf */; };
 		01FA29DC2928A38A00F7F3CE /* Proxima Nova Alt Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95429289C90000CE4E9 /* Proxima Nova Alt Light.otf */; };
 		01FA29DD2928A38C00F7F3CE /* Proxima Nova Alt Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95529289C90000CE4E9 /* Proxima Nova Alt Thin.otf */; };
@@ -15,6 +21,7 @@
 		01FA29E02928A39200F7F3CE /* Proxima Nova Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95329289C90000CE4E9 /* Proxima Nova Extrabold.otf */; };
 		01FA29E12928A39300F7F3CE /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95229289C90000CE4E9 /* Proxima Nova Thin.otf */; };
 		01FA29E22928A39600F7F3CE /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */; };
+		8460B49B293DA313007E8E00 /* AllHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460B49A293DA313007E8E00 /* AllHeroView.swift */; };
 		BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */; };
 		BD6ED9302918C01100632CFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6ED92F2918C01100632CFC /* ContentView.swift */; };
 		BD6ED9322918C01200632CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6ED9312918C01200632CFC /* Assets.xcassets */; };
@@ -51,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0111597F294CDB5200C7B0F8 /* HeroBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroBannerView.swift; sourceTree = "<group>"; };
+		01115981294CDB7600C7B0F8 /* HeroStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStatsView.swift; sourceTree = "<group>"; };
 		01DEB95229289C90000CE4E9 /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
 		01DEB95329289C90000CE4E9 /* Proxima Nova Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Extrabold.otf"; sourceTree = "<group>"; };
 		01DEB95429289C90000CE4E9 /* Proxima Nova Alt Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Light.otf"; sourceTree = "<group>"; };
@@ -59,7 +68,12 @@
 		01DEB95729289C90000CE4E9 /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
 		01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		01DEB95929289C90000CE4E9 /* Proxima Nova Alt Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Bold.otf"; sourceTree = "<group>"; };
+		01E2A63229418A920061DEAD /* DetailHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroView.swift; sourceTree = "<group>"; };
+		01E2A635294190330061DEAD /* DotaHeroStatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroStatsModel.swift; sourceTree = "<group>"; };
+		01E2A6372941B00D0061DEAD /* DetailHeroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroViewModel.swift; sourceTree = "<group>"; };
+		01E2A63A294207670061DEAD /* DetailHeroServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroServices.swift; sourceTree = "<group>"; };
 		01FA29DA2928A30200F7F3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8460B49A293DA313007E8E00 /* AllHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllHeroView.swift; sourceTree = "<group>"; };
 		BD6ED92A2918C01000632CFC /* Funios-DotaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Funios-DotaApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6ED92D2918C01100632CFC /* Funios_DotaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funios_DotaAppApp.swift; sourceTree = "<group>"; };
 		BD6ED92F2918C01100632CFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +133,41 @@
 				01DEB95829289C90000CE4E9 /* ProximaNova-Regular.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		01E2A62F29418A200061DEAD /* DetailHero */ = {
+			isa = PBXGroup;
+			children = (
+				01E2A639294207430061DEAD /* Services */,
+				01E2A63429418F610061DEAD /* Model */,
+				01E2A63229418A920061DEAD /* DetailHeroView.swift */,
+				01E2A6372941B00D0061DEAD /* DetailHeroViewModel.swift */,
+			);
+			path = DetailHero;
+			sourceTree = "<group>";
+		};
+		01E2A63429418F610061DEAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01E2A635294190330061DEAD /* DotaHeroStatsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01E2A639294207430061DEAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01E2A63A294207670061DEAD /* DetailHeroServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8460B499293CEC40007E8E00 /* AllHero */ = {
+			isa = PBXGroup;
+			children = (
+				8460B49A293DA313007E8E00 /* AllHeroView.swift */,
+			);
+			path = AllHero;
 			sourceTree = "<group>";
 		};
 		BD6ED9212918C01000632CFC = {
@@ -184,6 +233,8 @@
 		BD6ED9572918C01F00632CFC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8460B499293CEC40007E8E00 /* AllHero */,
+				01E2A62F29418A200061DEAD /* DetailHero */,
 				BD6ED95D2918C05D00632CFC /* HomeHero */,
 			);
 			path = Presentation;
@@ -240,6 +291,8 @@
 			children = (
 				E6C5FB06292922E10095CDB2 /* GuideOfHeroView.swift */,
 				E6C5FB08292926C10095CDB2 /* SectionView.swift */,
+				0111597F294CDB5200C7B0F8 /* HeroBannerView.swift */,
+				01115981294CDB7600C7B0F8 /* HeroStatsView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -398,16 +451,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C5FB0F292A0A1D0095CDB2 /* DotaHomeServices.swift in Sources */,
+				01E2A6382941B00D0061DEAD /* DetailHeroViewModel.swift in Sources */,
 				E6C5FB11292A287F0095CDB2 /* HomeViewModel.swift in Sources */,
+				8460B49B293DA313007E8E00 /* AllHeroView.swift in Sources */,
 				BD6ED9302918C01100632CFC /* ContentView.swift in Sources */,
 				D801ECEB29211C0900506054 /* NetworkError.swift in Sources */,
 				BD6ED92E2918C01100632CFC /* Funios_DotaAppApp.swift in Sources */,
+				01E2A636294190330061DEAD /* DotaHeroStatsModel.swift in Sources */,
 				E6C5FB0C292A09160095CDB2 /* DotaHeroModel.swift in Sources */,
 				E6C5FB04292919150095CDB2 /* HomeView.swift in Sources */,
+				01115980294CDB5200C7B0F8 /* HeroBannerView.swift in Sources */,
+				01E2A63B294207670061DEAD /* DetailHeroServices.swift in Sources */,
 				E6C5FB09292926C10095CDB2 /* SectionView.swift in Sources */,
 				D801ECED29211C5200506054 /* NetworkFactory.swift in Sources */,
 				D801ECE929211BB200506054 /* Networker.swift in Sources */,
 				E6C5FB07292922E10095CDB2 /* GuideOfHeroView.swift in Sources */,
+				01115982294CDB7600C7B0F8 /* HeroStatsView.swift in Sources */,
+				01E2A63329418A920061DEAD /* DetailHeroView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

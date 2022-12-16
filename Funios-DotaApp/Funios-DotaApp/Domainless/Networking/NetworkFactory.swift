@@ -12,6 +12,7 @@ enum NetworkFactory {
     case getPost(page: Int)
     case getUser
     case getHeroes
+    case getHeroStats
 }
 
 extension NetworkFactory {
@@ -25,6 +26,8 @@ extension NetworkFactory {
             return "/users"
         case .getHeroes:
             return "/api/heroes"
+        case .getHeroStats:
+            return "/api/heroStats"
         }
     }
     
@@ -33,7 +36,7 @@ extension NetworkFactory {
         switch self {
         case .getPost, .getUser:
             return []
-        case .getHeroes:
+        case .getHeroes, .getHeroStats:
             return []
         }
     }
@@ -97,7 +100,7 @@ extension NetworkFactory {
         switch self {
         case .getPost, .getUser:
             return getHeaders(type: .anonymous)
-        case .getHeroes:
+        case .getHeroes, .getHeroStats:
             return getHeaders(type: .anonymous)
         }
     }
