@@ -10,6 +10,7 @@ import SwiftUI
 struct DetailHeroView: View {
     var dotaName: String
     @StateObject var detailHeroViewModel: DetailHeroViewModel = DetailHeroViewModel()
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -52,12 +53,26 @@ struct DetailHeroView: View {
                 .padding(.horizontal, 20)
             }
             
+            
+
+            
         }.onAppear {
             Task {
                 await detailHeroViewModel.getHeroStats(heroName: dotaName)
             }
         }
         .ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(.white)
+                }
+            }
+        }
             
     }
 }
