@@ -25,9 +25,6 @@ struct HomeView: View {
                 SectionView(heroType: "Intelligence", description: "Intelligence heroes are smart", heroes: homeViewModel.intHero)
             }
         }
-        .task {
-            await homeViewModel.getHeroes()
-        }
         .padding([.horizontal, .top])
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading){

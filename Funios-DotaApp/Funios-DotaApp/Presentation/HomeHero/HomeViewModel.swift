@@ -18,6 +18,9 @@ class HomeViewModel: ObservableObject {
     
     init(dotaServices: DotaHomeServicesProtocol = DotaHomeServices()) {
         self.dotaServices = dotaServices
+        Task {
+            await self.getHeroes()
+        }
     }
     
     //MARK: Function to get hero data from api and doing the classification
