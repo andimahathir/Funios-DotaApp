@@ -131,7 +131,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		01E2A62F29418A200061DEAD /* DetailHero */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,16 +156,16 @@
 				01E2A63A294207670061DEAD /* DetailHeroServices.swift */,
 			);
 			path = Services;
-=======
-		8460B499293CEC40007E8E00 /* AllHero */ = {
-			isa = PBXGroup;
-			children = (
-				8460B49A293DA313007E8E00 /* AllHeroView.swift */,
-			);
-			path = AllHero;
->>>>>>> upstream/Development
 			sourceTree = "<group>";
 		};
+          8460B499293CEC40007E8E00 /* AllHero */ = {
+            isa = PBXGroup;
+            children = (
+                8460B49A293DA313007E8E00 /* AllHeroView.swift */,
+            );
+            path = AllHero;
+            sourceTree = "<group>";
+        };
 		BD6ED9212918C01000632CFC = {
 			isa = PBXGroup;
 			children = (
@@ -230,11 +229,8 @@
 		BD6ED9572918C01F00632CFC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				01E2A62F29418A200061DEAD /* DetailHero */,
-=======
-				8460B499293CEC40007E8E00 /* AllHero */,
->>>>>>> upstream/Development
+                8460B499293CEC40007E8E00 /* AllHero */,
+                01E2A62F29418A200061DEAD /* DetailHero */,
 				BD6ED95D2918C05D00632CFC /* HomeHero */,
 			);
 			path = Presentation;
