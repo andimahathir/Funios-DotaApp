@@ -18,27 +18,29 @@ struct AllHeroView: View {
         ScrollView {
             LazyVGrid (columns: columns) {
                 ForEach(heroes) { hero in
-                    ZStack {
-                        Color.gray
-                        
-                        AsyncImage(url: URL(string: hero.image)) { image in
-                            image
-                                .resizable()
-                                .scaledToFill()
-                        } placeholder: {
+                    NavigationLink(destination: DetailHeroView(dotaName: hero.localizedName), label: {
+                        ZStack {
                             Color.gray
+                            
+                            AsyncImage(url: URL(string: hero.image)) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                            } placeholder: {
+                                Color.gray
+                            }
+                            
+                            VStack {
+                                Spacer()
+                                Text("\(hero.localizedName)")
+                                    .foregroundColor(.white)
+                                    .font(.title3.weight(.bold))
+                                    .padding(.bottom)
+                            }
                         }
-                        
-                        VStack {
-                            Spacer()
-                            Text("\(hero.localizedName)")
-                                .foregroundColor(.white)
-                                .font(.title3.weight(.bold))
-                                .padding(.bottom)
-                        }
-                    }
-                    .cornerRadius(10)
-                    .padding([.top, .bottom], 5)
+                        .cornerRadius(10)
+                        .padding([.top, .bottom], 5)
+                    })
                 }
             }
             .padding([.leading, .trailing], 10)
